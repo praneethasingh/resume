@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+<link rel="stylesheet" href="style.css">
 </style>
 </head>
 <body class="w3-light-grey">
@@ -188,43 +189,245 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-text-black"><b>AWS Academy</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
-          <p>AWS Academy Graduate</p>
-          <p>Machine Learning Foundations</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-black"><b>CISCO</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
-          <p>Programming Essentials in C</p>
-          <p>Advanced Programming in C</p>
-          <p>Introduction to Cyber Security</p>
-          <p>Cyber Security Essentials</p>
-          <p>JavaScript Essentials</p>
-          <p>NDG LINUX Unhatched</p>
-          <p>Introduction to Networks</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-black"><b>INFOSYS</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
-          <p>Programming Fundamentals using Python</p>
-          <p>Programming Fundamentals using Java</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-black"><b>ACCENTURE</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
-          <p>Developer Virtual Experience Program-FORAGE</p><br>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-text-black"><b>ORACLE</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
-          <p>Database Foundation</p><br>
-        </div>
-      </div>
+        
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Academy Skills</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Add your custom styles here */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <h5 class="w3-text-black" id="awsHeader"><b>AWS Academy <i class="fa fa-caret-down"></i></b></h5>
+    <div class="hidden" id="awsContent">
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
+        <p>AWS Academy Graduate</p>
+        <p>Machine Learning Foundations</p>
+    </div>
+    <hr>
+</div>
+
+<script>
+    // JavaScript to toggle visibility of AWS Academy content
+    document.getElementById("awsHeader").addEventListener("click", function() {
+        var content = document.getElementById("awsContent");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            this.querySelector("i").classList.remove("fa-caret-down");
+            this.querySelector("i").classList.add("fa-caret-up");
+        } else {
+            content.classList.add("hidden");
+            this.querySelector("i").classList.remove("fa-caret-up");
+            this.querySelector("i").classList.add("fa-caret-down");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CISCO</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Add your custom styles here */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <h5 class="w3-text-black" id="ciscoHeader"><b>CISCO <i class="fa fa-caret-down"></i></b></h5>
+    <div class="hidden" id="ciscoContent">
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
+        <p>Programming Essentials in C</p>
+        <p>Advanced Programming in C</p>
+        <p>Introduction to Cyber Security</p>
+        <p>Cyber Security Essentials</p>
+        <p>JavaScript Essentials</p>
+        <p>NDG LINUX Unhatched</p>
+        <p>Introduction to Networks</p>
+    </div>
+    <hr>
+</div>
+
+<script>
+    // JavaScript to toggle visibility of AWS Academy content
+    document.getElementById("ciscoHeader").addEventListener("click", function() {
+        var content = document.getElementById("ciscoContent");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            this.querySelector("i").classList.remove("fa-caret-down");
+            this.querySelector("i").classList.add("fa-caret-up");
+        } else {
+            content.classList.add("hidden");
+            this.querySelector("i").classList.remove("fa-caret-up");
+            this.querySelector("i").classList.add("fa-caret-down");
+        }
+    });
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INFOSYS</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Add your custom styles here */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <h5 class="w3-text-black" id="infosysHeader"><b>INFOSYS <i class="fa fa-caret-down"></i></b></h5>
+    <div class="hidden" id="infosysContent">
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
+        <p>Programming Fundamentals using Python</p>
+        <p>Programming Fundamentals using Java</p>
+    </div>
+    <hr>
+</div>
+
+<script>
+    // JavaScript to toggle visibility of AWS Academy content
+    document.getElementById("infosysHeader").addEventListener("click", function() {
+        var content = document.getElementById("infosysContent");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            this.querySelector("i").classList.remove("fa-caret-down");
+            this.querySelector("i").classList.add("fa-caret-up");
+        } else {
+            content.classList.add("hidden");
+            this.querySelector("i").classList.remove("fa-caret-up");
+            this.querySelector("i").classList.add("fa-caret-down");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCENTURE</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Add your custom styles here */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <h5 class="w3-text-black" id="accentureHeader"><b>ACCENTURE <i class="fa fa-caret-down"></i></b></h5>
+    <div class="hidden" id="accentureContent">
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
+        <p>Developer Virtual Experience Program-FORAGE</p>
+    </div>
+    <hr>
+</div>
+
+<script>
+    // JavaScript to toggle visibility of AWS Academy content
+    document.getElementById("accentureHeader").addEventListener("click", function() {
+        var content = document.getElementById("accentureContent");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            this.querySelector("i").classList.remove("fa-caret-down");
+            this.querySelector("i").classList.add("fa-caret-up");
+        } else {
+            content.classList.add("hidden");
+            this.querySelector("i").classList.remove("fa-caret-up");
+            this.querySelector("i").classList.add("fa-caret-down");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORACLE</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Add your custom styles here */
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="w3-container">
+    <h5 class="w3-text-black" id="oracleHeader"><b>ORACLE <i class="fa fa-caret-down"></i></b></h5>
+    <div class="hidden" id="oracleContent">
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>In the duration of Semester</h6>
+        <p>Database Foundation</p>
+    </div>
+    <hr>
+</div>
+
+<script>
+    // JavaScript to toggle visibility of AWS Academy content
+    document.getElementById("oracleHeader").addEventListener("click", function() {
+        var content = document.getElementById("oracleContent");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            this.querySelector("i").classList.remove("fa-caret-down");
+            this.querySelector("i").classList.add("fa-caret-up");
+        } else {
+            content.classList.add("hidden");
+            this.querySelector("i").classList.remove("fa-caret-up");
+            this.querySelector("i").classList.add("fa-caret-down");
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+
+        
       
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>ADDITIONAL RESPONSIBILITIES</h2>
